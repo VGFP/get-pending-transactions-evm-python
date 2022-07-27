@@ -80,9 +80,9 @@ def handle_event(event):
 
 ## Sources and useful links
 
-* [Python web3 docs](https://web3py.readthedocs.io/en/stable/index.html) - Your main source of information about web3 in Python.
+* [Python web3 docs](https://web3py.readthedocs.io/en/stable/index.html) - Main source of information about web3 in Python.
 * [Alchemy](https://www.alchemy.com/) - You can get websocket endpoint for your blockchain here.
 * [How to create your own front running bot with ethers.js and FastlyNode](https://coinsbench.com/how-to-create-your-own-front-running-bot-with-ethers-js-and-fastlynode-f18e31de1c3e) - Same thing as shown in this repo but in node.js.
-* [Polyscan](https://polygonscan.com/) - You can get smart contracts ABIs here (for polygon network if you are using diffrent network use ).
+* [Polyscan](https://polygonscan.com/) - You can get smart contracts ABIs here (for other networks, use the appropriate chain explorer).
 
 In case of futher questions, please create Issue with label "Question".
