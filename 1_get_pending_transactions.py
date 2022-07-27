@@ -7,21 +7,22 @@ import os
 # Loading the .env file
 load_dotenv()
 
-wss_url = os.getenv('WSS_URL')
+wss_url = os.getenv("WSS_URL")
 
 web3_client = Web3(Web3.WebsocketProvider(wss_url))
 
 pprint(web3_client.isConnected())
 
-pending_transactions = web3_client.eth.filter('pending').get_new_entries()
+pending_transactions = web3_client.eth.filter("pending").get_new_entries()
 
 pprint(pending_transactions)
 pending_transaction = dict(web3_client.eth.get_transaction(pending_transactions[0]))
 pprint(pending_transaction)
 
 # Example output:
-'''
-{'blockHash': None,
+"""
+{
+ 'blockHash': None,
  'blockNumber': None,
  'from': '0xAE374e55BCEd1a0EA63227d098149EDBc1E38552',
  'gas': 887154,
@@ -35,5 +36,6 @@ pprint(pending_transaction)
  'transactionIndex': None,
  'type': '0x0',
  'v': 310,
- 'value': 0}
- '''
+ 'value': 0
+}
+ """
