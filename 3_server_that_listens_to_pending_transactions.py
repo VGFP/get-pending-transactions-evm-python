@@ -35,6 +35,7 @@ def handle_event(event):
     if transaction.get("to") == uniswap_router.address:
         pprint(transaction)
         decoded_data = uniswap_router.decode_function_input(transaction.get("data"))
+        pprint(decoded_data)
     elif transaction.get("to") == quickswap_router.address:
         pprint(transaction)
         decoded_data = quickswap_router.decode_function_input(transaction.get("input"))
