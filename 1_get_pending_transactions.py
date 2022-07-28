@@ -16,7 +16,12 @@ pprint(web3_client.isConnected())
 pending_transactions = web3_client.eth.filter("pending").get_new_entries()
 
 pprint(pending_transactions)
-pending_transaction = dict(web3_client.eth.get_transaction(pending_transactions[0]))
+try:
+    pending_transaction = dict(web3_client.eth.get_transaction(pending_transactions[0]))
+# Error handling
+except Exception as e:
+    print(e)
+    pending_transaction = None
 pprint(pending_transaction)
 
 # Example output:
