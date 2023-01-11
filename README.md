@@ -1,5 +1,3 @@
-YT: [How to get pending transaction from EVM blockchain in Python](https://youtu.be/uHpVMXHb9H8)
-
 # How to get pending transactions using python
 
 Pending transactions are transactions that have not been included in a block. They are signed so EVM will try to execute them but they may fail for a number of reasons (sender cancelled it by front running cancel transaction, smart contract logic will fail or execution's cost will exceed the gas limit).
